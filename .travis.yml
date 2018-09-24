@@ -1,3 +1,11 @@
+
+language: python
+
+
+install:
+  - true
+
+
 env:
   global:
     - KEY=api_key_1
