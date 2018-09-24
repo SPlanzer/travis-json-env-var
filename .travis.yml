@@ -8,6 +8,6 @@ env:
   #travis encrypt 'KEYS2={"domain1":"api_key_1","domain2":"api_key2"}' --com --add
   - secure: XVtAN0vJPHj9nRWgljifzCZyy+7+1gUEDitUv4n4SAjGRSDWChIz//QLdYT8jDO/fmhr9+maK6JIhHiX7zqxKN/USlNEriWEJyq3Sqf8D3PYCd0/oPpYV9Pe1j36EWi0q1ufOhqs0R/Su8vmzThSPlYbYEhcxrJxjr1euuB9yCviTe+PAHaJSewZ/QwlMooGhGFDpoLHNy6Zxbd5Ca0N2Sbg4mn31zkkXjKYSXYUYcMbeM4CPBuZhoOxHyMLDjq9WDf4FsF8gDpbWZFV3b/Ehy2AbTnjg328YA2/Fe6TNG0zalOvXjmJm9DXXU1VY/2k94ZuWybTpDG8DeN+84es43pi+IvpQ6S/CK/dj2k1qqQXYHrze+eQOAiWLP+N+PzE6VTXjxBy+HjPJN34xb2wAMGW1QisjF9NFMbapz1npNFc29rmJoZRnOn+11DRriQUEJCgdTCiTSk5t1U7EQSb3W5T9TxmHbagy57KJQcBoqzXc8+tSqG3NrvvVgpgq6aW9j9oIP2HVUeQ85ZBRcc8DAOZV1uCoDgikvSE1lLAvnq7F59vhP6PzAT+XuYOa4RlzLq3uRxu8Bo+ZaKTdDxal+gKaTCD7geP/ltyuPmP2MJ8UKeF2hvTX5V6ses3TuchEFs/Rs3vRzC5qD9egq7PGOQOo/lpgYcwjmtV2YfdDa0=
 script:
-  - '[ "$KEY" == "api_key1" ] && echo "PASS"'
-  - '[ "$KEYS" == '{"domain1":"api_key_1","domain2":"api_key2"}' ] && echo "PASS"'
-  - '[ "$KEYS2" == '{"domain1":"api_key_1","domain2":"api_key2"}' ] && echo "PASS"'
+  - echo -e [ "$KEY" == "api_key1" ] && echo "PASS"
+  - echo -e  [ "$KEYS" == '{"domain1":"api_key_1","domain2":"api_key2"}' ] && echo "PASS"
+  - echo -e   [ "$KEYS2" == '{"domain1":"api_key_1","domain2":"api_key2"}' ] && echo "PASS"
