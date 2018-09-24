@@ -1,0 +1,4 @@
+env:
+  global:
+    - KEY=api_key_1
+    - 'KEYS={"domain1":"api_key_1","domain2":"api_key2"}'
