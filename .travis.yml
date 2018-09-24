@@ -5,9 +5,23 @@ env:
   global:
   - KEY=api_key_1
   - KEYS={"domain1":"api_key_1","domain2":"api_key2"}
-  #travis encrypt 'KEYS2={"domain1":"api_key_1","domain2":"api_key2"}' --com --add
+  # travis encrypt 'KEYS2={"domain1":"api_key_1","domain2":"api_key2"}' --com --add
   - secure: XVtAN0vJPHj9nRWgljifzCZyy+7+1gUEDitUv4n4SAjGRSDWChIz//QLdYT8jDO/fmhr9+maK6JIhHiX7zqxKN/USlNEriWEJyq3Sqf8D3PYCd0/oPpYV9Pe1j36EWi0q1ufOhqs0R/Su8vmzThSPlYbYEhcxrJxjr1euuB9yCviTe+PAHaJSewZ/QwlMooGhGFDpoLHNy6Zxbd5Ca0N2Sbg4mn31zkkXjKYSXYUYcMbeM4CPBuZhoOxHyMLDjq9WDf4FsF8gDpbWZFV3b/Ehy2AbTnjg328YA2/Fe6TNG0zalOvXjmJm9DXXU1VY/2k94ZuWybTpDG8DeN+84es43pi+IvpQ6S/CK/dj2k1qqQXYHrze+eQOAiWLP+N+PzE6VTXjxBy+HjPJN34xb2wAMGW1QisjF9NFMbapz1npNFc29rmJoZRnOn+11DRriQUEJCgdTCiTSk5t1U7EQSb3W5T9TxmHbagy57KJQcBoqzXc8+tSqG3NrvvVgpgq6aW9j9oIP2HVUeQ85ZBRcc8DAOZV1uCoDgikvSE1lLAvnq7F59vhP6PzAT+XuYOa4RlzLq3uRxu8Bo+ZaKTdDxal+gKaTCD7geP/ltyuPmP2MJ8UKeF2hvTX5V6ses3TuchEFs/Rs3vRzC5qD9egq7PGOQOo/lpgYcwjmtV2YfdDa0=
+  # travis encrypt 'KEYS3={\"domain1\":\"api_key_1\",\"domain2\":\"api_key2\"}' --com --add
+  - secure: GAxF8yvpjYkya9MCFCAL0SCYDqdkFplyXLWFxdfIMfaUpclgTNfQYjY+nbp7KDTlXtxLe/Bc0KQwI3UphFsJuV6iS5P3tpvg5SiFcemH9B0LRR8ptdKdIu1IN/cJ8G7ZM+jF8MKym1eCNIfIUmFGMXFUAvaZ26bfrL0DzFF60e4f0qho22uPONeorIMHcqSHjuNCNBGQluEbhPyNsyKkFyKth3GmMdPSVZ6ZC8nLguVgdpazJyKCux0bv9mwUY1OqqhrS4IDAhCvneFh21F4cbfMegG+aHAFJuR6JZypJTQjmzIYpoSPGeyhHvvQV6dSaUD90IBS81L065yOJSIsr7jUxGPXt5Bubj9MHJXYt+x22vpSsSC4RxAUJloBE9B2253XiixEYJuSlE127hDfX6rQqR3SbMZF1U4olOX0WukvjchslWfUd5QWstgdVPrBHZgbCVBPs2/daLOe3IbMxTyXqx/CBj0NgGtPltA6JpTYnfEp0xgGXepPDbwkk8XqN0OCXXn3jpwqgHWlmclSWhmBzrjo2/l5RQh+ZUzwAY7C5MZ3iQZS/aCCxqCA375+rDY1E2w9JDE/dApteqmeKoTdo2DZQ/Rtu/LzbcWomkiTTmmUUgSpZlLsNdvS/z3eBpCtku9U1GDtAEP6+TseX+A0oPdytqOxLC4yDsGoPjk=
+  # travis encrypt 'KEYS4=\{\"domain1\":\"api_key_1\",\"domain2\":\"api_key2\"\}' --com --add
+  - secure: ZC+qQlWV0qolsp5yJFRTntlOnke+kUkPyQM6lICHJ1vbC6MyGei1/0elm7IkYkbR2UI3sTyPt2/9KyQaxHoq7zNMxJqzz92E0hNgt4507wPZMK+IL98a7bojAQiAxlfVGwvZb0J7zA3zHuG/TXMpkYjGaDhm0vxERJhDqnriND9Y0sOnL0hjXhmX9LYG23+O9r55SChjSOToUXJEdX/Td0L04Cv+ikl9p8nmb/goIBILzp/XriBebiUaIxKr5EGB5e5ipNZfCKW4ox++dj8e9D1+TxTp7dV2MDQKjHHplRitym/wwrOK0U/b/DOvsLl4pbABE7R3e7+22QuHXrIjaJK2Xrmdir+W/QNKO32K9mlU92tyT+Cg5Nzu+e0fxRDiseMZzT/Dst3Hu3uRfIWZROQXRjGtyfIHALMrblSRYO/3pxhf8T+hxBuGQI2sLKLRkaO4JZ0/8/wMcHpK2B3px9VGFrEaFqPBxB/dR23yR+L0xQIitA+jVuJ6RYNyEzBWipuLgdSU39KKoHili8aD3tCMWT/aC14zGkwxWrxOYRULiN+ms8h+0oEIPZVII5uWdSstK1TzEbHM7funi9J4/Vivdpov9CmfLPGMIWjs6QCbEWA6+eJzC8sVMEfowFatujS1L3rNh1TwkCxPnUiMVWmgtg64mt4nzwCGxq6NxJI=
+  #travis encrypt 'KEYS5=\{\"domain.1\":\"api_key_1\",\"domain.2\":\"api_key2\"\}' --com --add
+  - secure: cYCcoN6DwvCCq0k0DsZwmROrhnYJ4bGp/V/SpVTdjUK4lSN7NCciRctyzK9OZv3tn6RLnX4Pdm+gATC/8JRl0v0nzh/tWvQ9rLmECaDcRfeQv36TyUdTtp1B/mr2/V/0Da4L1o8OBgstacoDanB8BxHlpFrmNs1M136AONv+aO7QW20Q/CHk8CHO7exi/R2iisM4454Mvsh2O214LLmxXnYgwN3JB819G5VlVe6rQhugQzGP3xNZqCUB5XWujf1p2RUlYvAXJ75tbZJV8KUnhPjU6PHobkjGliyQ+YKYqFRq2eUWsKBcZ6dGB+/vQXdYN0hZ4MMmdWufNqm8tC+zvHQCqk4DoY5liOaFDfRpzgPlK4MOWTT3xsHwqlW93ON9jZwRS0nBmMyBt1n3yG1ntaFE4NBqR16bsyRpBi283xbb9FhZFSoCfYLZ5WliQaxQVSsGTQDj1jzmJOvPqNWchzp+x2KvLAsZi8nkD2xVHjb5/sAa89jIkI+6903Z+Nnf8YY5AhWIucuqxegmh6oPCV8rLZNSFRKawLqdUmIkzAknsWeduJTIXoqBWQ7JuCOLJHiRQ4uIniT1q4BN1FYXKJWusNRW3LOEbG+GSqkIVlX9iMYFN7PiBxi1qQ2gZ0zEtntChfqEfmYaBVGYud6xsEwE6rseApMw0INJXTlk4os=
+  #travis encrypt 'KEYS6=\{\"domain\.1\":\"api_key_1\",\"domain\.2\":\"api_key2\"\}' --com --add
+  - secure: FHF41oaPL/PI3Yf+bF6QuiwV/GFEcsj8Ko/hm9wkVM+JI5bk7bWdi2Tl11vlXpFvAt4HmhuA5+cwbw7rulvpirLLhG6RURUZ9KOJQAL0ERmTmCRAY4bN04q0Cv3IVrVIIJhieLDVTJ1R11GtwFv1qjtkt4t9CdGXUD1nERiW2vfkvKM5ORXUYEeknHoEc5TfJE3nOSpBjMt0cosdWT7viJusNvRXj+w+ModJRjmspbZZkEgxjkETV4UrjglpIxkycxgfnq5z2lvW8j9V/zqozzdvBgd5ljOwn4njrAzm7MYOqXCoO0IBzLJgwd3KxqXA71AiZftKV1ns5IgS9176U1dLSD2FxgQvLzN/aFjpdLSRmVhsGis0uKSWSzt/1IZ6oIsF073LHEtb1bYm8g4Znft/Hjfwb+CecF4sXo1gYvozAeNyBG27vMaxAlrvM6hhfjkhZC0HmzX3Uv/J7qsLFIsdSP6aAKjHQmuBKoE3CpSKHpm7K9BWVZ+YgKrlmRnAKSiPkaig9tqjCwNGila+0wX1rtDL/+p0FKwDu+K1stJA81wEVHl24+67/XqLDhQV5vcZPoVdjLckJxpRpMWsR6tOnbXtc/6BEW3rE/IFX1paqdr0rfwl8ay4THrTkcBWcI71AZVA18tJt7eivZcjkQqmUld1V8PdYGUsh7G+cVg=
+
 script:
   - echo -e [ "$KEY" == "api_key1" ] && echo "PASS"
-  - echo -e  [ "$KEYS" == '{"domain1":"api_key_1","domain2":"api_key2"}' ] && echo "PASS"
-  - echo -e   [ "$KEYS2" == '{"domain1":"api_key_1","domain2":"api_key2"}' ] && echo "PASS"
+  - echo -e [ "$KEYS" == '{"domain1":"api_key_1","domain2":"api_key2"}' ] && echo "PASS"
+  - echo -e [ "$KEYS2" == '{"domain1":"api_key_1","domain2":"api_key2"}' ] && echo "PASS"
+  - echo -e [ "$KEYS3" == '{"domain1":"api_key_1","domain2":"api_key2"}' ] && echo "PASS"
+  - echo -e [ "$KEYS4" == '{"domain1":"api_key_1","domain2":"api_key2"}' ] && echo "PASS"
+  - echo -e [ "$KEYS5" == '{"domain.1":"api_key_1","domain2":"api_key.2"}' ] && echo "PASS"
+  - echo -e [ "$KEYS6" == '{"domain.1":"api_key_1","domain2":"api_key.2"}' ] && echo "PASS"
+  - echo -e [ "$KEYS6" == 'blah blah blah' ] && echo "FAIL"
